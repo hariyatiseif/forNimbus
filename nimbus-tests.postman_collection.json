@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "7a5557f3-2903-427a-912c-43bb86be8197",
+		"name": "nimbus-tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://autotest.time2work.com/restapi/Authenticate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "default"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip",
+						"type": "default"
+					},
+					{
+						"key": "Host",
+						"value": "autotest.time2work.com",
+						"type": "default"
+					},
+					{
+						"key": "Connection",
+						"value": "Keep-Alive",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "UserID= 0810@Time2Work.com&Password=@Seiftie&Username=Seiftie@Time2Work.com",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://autotest.time2work.com/restapi/Authenticate",
+					"protocol": "http",
+					"host": [
+						"autotest",
+						"time2work",
+						"com"
+					],
+					"path": [
+						"restapi",
+						"Authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GETSeiftie",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json; charset=utf-8",
+						"type": "text"
+					},
+					{
+						"key": "AuthenticationToken",
+						"value": "c132af9c-de1f-4ecd-b34b-604cfeb7cbad",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "UserID",
+						"value": "40812",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "autotest.time2work.com",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://autotest.time2work.com/restapi/Report?report=UserReportModel&activeOnly=False&rosterableOnly=False&__ReportFunction=GetStaffList",
+					"protocol": "http",
+					"host": [
+						"autotest",
+						"time2work",
+						"com"
+					],
+					"path": [
+						"restapi",
+						"Report"
+					],
+					"query": [
+						{
+							"key": "report",
+							"value": "UserReportModel"
+						},
+						{
+							"key": "activeOnly",
+							"value": "False"
+						},
+						{
+							"key": "rosterableOnly",
+							"value": "False"
+						},
+						{
+							"key": "__ReportFunction",
+							"value": "GetStaffList"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

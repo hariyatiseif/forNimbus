@@ -1,0 +1,25 @@
+{
+    "Items": [
+        {
+            "Key": "Results",
+            "Value": [
+                {
+                    "UserID": 40812,
+                    "Payroll": "",
+                    "Forename": "SEIFTIE",
+                    "PreferedName": "",
+                    "Surname": "H",
+                    "FullName": "SEIFTIE H",
+                    "JobRole": null,
+                    "PrimaryLocations": "Test Location",
+                    "StartDate": "2015-01-01T00:00:00",
+                    "Rosterable": false,
+                    "Active": true
+                }
+            ]
+        }
+    ],
+    "RenderResult": null,
+    "RecordCount": 1,
+    "LastChange": "0001-01-01T00:00:00"
+}
